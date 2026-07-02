@@ -13,8 +13,9 @@
     <link rel="icon" href="./images/favicon (1).png" />
   </head>
   <body>
+    <!-- *****************************navbar*********************************** -->
     <nav
-      class="navbar navbar-expand-lg border-bottom navbar-dark border-dark p-3"
+      class="navbar navbar-expand-lg border-bottom navbar-dark border-dark p-3 fixed-top"
     >
       <div class="container">
         <p class="navbar-brand m-0 fw-bold text-main" href="#">
@@ -51,14 +52,63 @@
               <a class="nav-link" href="#contact-us">Contact Us</a>
             </li>
           </ul>
-          <ul class="text-white list-unstyled d-flex align-items-lg-center gap-3 flex-lg-row flex-column mb-0">
-            <li class="nav-icons"><i class="fa-regular fa-bell fa-lg"></i> <span class="d-lg-none">Notifications</span></li>
-            <li class="nav-icons"><i class="fa-regular fa-message fa-lg"></i> <span class="d-lg-none">Messages</span></li>
-            <button class="sign-btn bg-main border-0 px-4 btn py-2 fw-bold shine">Sign In</button>
+          <ul
+            class="text-white list-unstyled d-flex align-items-lg-center gap-3 flex-lg-row flex-column mb-0"
+          >
+            <li class="nav-icons">
+              <i class="fa-regular fa-bell fa-lg"></i>
+              <span class="d-lg-none">Notifications</span>
+            </li>
+            <li class="nav-icons">
+              <i class="fa-regular fa-message fa-lg"></i>
+              <span class="d-lg-none">Messages</span>
+            </li>
+            <button
+              class="sign-btn bg-main border-0 px-4 btn py-2 fw-bold shine"
+            >
+              Sign In
+            </button>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- ********************************home**************************************** -->
+    <section id="home">
+      <div class="container">
+        <div class="row hero">
+          <div class="col-lg-6">
+            <div>
+              <h1 class="text-white">
+                <span>THE ULTIMATE</span>
+                <span class="text-main">GAMING</span>
+                <span>EXPERIENCE</span>
+              </h1>
+              <p class="">
+                Join millions of gamers worldwide in the most competitive
+                eSports tournaments. Experience next-level gaming with
+                cutting-edge technology and endless possibilities.
+              </p>
+              <button class="mt-lg-4 me-4 shine text-capitalize bg-main px-4 py-3 btn fw-bold">start gaming now</button>
+              <button class="mt-lg-4 btn-2 shine text-capitalize text-main px-4 py-3 btn fw-bold">watch tournamets</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative hero-img">
+              <img src="./images/hero-img-C0b4IWtS.png" alt="" class="w-100">
+            <div class="d-flex img-badge align-items-center gap-3 text-white">
+<i class="fa-solid fa-trophy fa-lg text-main"></i>
+<div>
+  <p class="text-capitalize">active players</p>
+  <h5>2.5M+</h5>
+</div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ***************************************our gamess***************************************** -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>

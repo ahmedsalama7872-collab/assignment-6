@@ -12,6 +12,7 @@ body {
   background-color: var(--second-color);
   font-family: "Chakra Petch", sans-serif;
 }
+
 .shine{
     position: relative;
     overflow: hidden;
@@ -31,8 +32,11 @@ transition: 0.5s all;
 }
 .shine:hover{
     background-color: #A4CE1A;
+    color: black !important;
 }
-
+.shine.btn-2:hover{
+    background-color: var(--main-color);
+}
 h1,
 h2,
 h3,
@@ -49,7 +53,9 @@ h6 {
     color: white !important;
     font-size: 1.0625rem;
 }
-
+.navbar{
+    background-color: var(--second-color);
+}
 .navbar-nav .nav-link.active{
     color: var(--main-color) !important;
 }
@@ -75,5 +81,82 @@ h6 {
     }
     .nav-icons{
         padding-block: 10px;
+    }
+}
+
+
+/* *******************home********************* */
+
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0,0.87)),url(../images/hero-bg-H6PoyNYD.jpg);
+    min-height: 100vh;
+   background-attachment: fixed;
+   background-size: cover; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero h1{
+font-size: 4.0625rem;    
+}
+.hero p{
+    max-width: 570px;
+}
+.btn-2{
+    border: 2px solid var(--main-color);
+}
+.hero img{
+
+border-radius: 15px;
+    height: 400px;
+    object-fit: cover;
+}
+.hero-img{
+    background-image: linear-gradient(to right,#CAFD1D,#0AE072  );
+    padding: 5px;
+    border-radius: 15px;
+}
+.img-badge{
+    position: absolute;
+    bottom: -16px;
+    left: -16px;
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+    background-color:#0B0E13 ;
+    padding-inline: 30px;
+    padding-block: 20px;
+}
+.img-badge p{
+    font-size: .75rem;
+    margin-bottom: 0;
+}
+
+#home p{
+    color: #99a1af;
+}
+@media screen and (max-width:782px){
+    #home button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #home h1{
+        font-size: 2.5rem;
+    }
+    #home{
+        padding-top: 150px;
+        text-align: center;
+    padding-bottom: 100px;
+    background-attachment: scroll;
+    }
+    .hero-img{
+        margin-top: 50px;
+    }
+    .hero-img img{
+        height: 230px;
+    }
+    .img-badge{
+        padding: 10px;
     }
 }
