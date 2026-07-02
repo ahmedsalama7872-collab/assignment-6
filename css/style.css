@@ -1,0 +1,79 @@
+:root {
+  --main-color: #cbfe1c;
+  --second-color: #0b0e13;
+}
+.text-main {
+  color: var(--main-color) !important;
+}
+.bg-main {
+  background-color: var(--main-color);
+}
+body {
+  background-color: var(--second-color);
+  font-family: "Chakra Petch", sans-serif;
+}
+.shine{
+    position: relative;
+    overflow: hidden;
+}
+.shine:hover::before{
+left: 100%;
+}
+.shine::before{
+    content: "";
+position: absolute;
+top: 0;
+left: -100%;
+background-image: linear-gradient(to right, transparent, rgba(255, 255, 255,0.7),transparent);
+width: 100%;
+height: 100%;
+transition: 0.5s all;
+}
+.shine:hover{
+    background-color: #A4CE1A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Days One", sans-serif;
+}
+
+
+/*********************navbar*************************/
+
+.nav-link{
+    color: white !important;
+    font-size: 1.0625rem;
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--main-color) !important;
+}
+ .nav-link:hover{
+    color: var(--main-color) !important;
+ }
+.nav-icons:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+@media screen and (max-width:782px){
+    .navbar .sign-btn{
+        
+        width: 100%;
+    }
+    .navbar a{
+        margin-bottom: 20px;
+        
+    }
+    .navbar-nav{
+        border-bottom: 0.5px solid #424242;
+        padding-bottom: 0 !important;
+    }
+    .nav-icons{
+        padding-block: 10px;
+    }
+}
