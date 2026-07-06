@@ -11,37 +11,45 @@
 body {
   background-color: var(--second-color);
   font-family: "Chakra Petch", sans-serif;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
-
-.shine{
-    position: relative;
-    overflow: hidden;
-}
-.shine:hover::before{
-left: 100%;
-}
-.shine::before{
-    content: "";
-position: absolute;
-top: 0;
-left: -100%;
-background-image: linear-gradient(to right, transparent, rgba(255, 255, 255,0.7),transparent);
-width: 100%;
-height: 100%;
-transition: 0.5s all;
-}
-.shine:hover{
-    background-color: #A4CE1A;
-    color: black !important;
-}
-.btn-2:hover{
+body::selection{
     background-color: var(--main-color);
-    color: black !important;
+    color: black;
 }
-.btn-2{
-    background-color: transparent;
-    color: var(--main-color);
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+.shine:hover::before {
+  left: 100%;
+}
+.shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.7),
+    transparent
+  );
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all;
+}
+.shine:hover {
+  background-color: #a4ce1a;
+  color: black !important;
+}
+.btn-2:hover {
+  background-color: var(--main-color);
+  color: black !important;
+}
+.btn-2 {
+  background-color: transparent;
+  color: var(--main-color);
 }
 h1,
 h2,
@@ -52,347 +60,616 @@ h6 {
   font-family: "Days One", sans-serif;
 }
 
-
 /*********************navbar*************************/
 
-.nav-link{
-    color: white !important;
-    font-size: 1.0625rem;
+.nav-link {
+  color: white !important;
+  font-size: 1.0625rem;
 }
-.navbar{
-    background-color: var(--second-color);
+.navbar {
+  background-color: var(--second-color);
 }
-.navbar-nav .nav-link.active{
-    color: var(--main-color) !important;
+.navbar-nav .nav-link.active {
+  color: var(--main-color) !important;
 }
- .nav-link:hover{
-    color: var(--main-color) !important;
-
- }
-.nav-icons:hover{
-    color: var(--main-color);
-    cursor: pointer;
+.nav-link:hover {
+  color: var(--main-color) !important;
 }
-@media screen and (max-width:782px){
-    .navbar .sign-btn{
-        
-        width: 100%;
-    }
-    .navbar a{
-        margin-bottom: 20px;
-        
-    }
-    .navbar-nav{
-        border-bottom: 0.5px solid #424242;
-        padding-bottom: 0 !important;
-    }
-    .nav-icons{
-        padding-block: 10px;
-    }
+.nav-icons:hover {
+  color: var(--main-color);
+  cursor: pointer;
 }
 
 
 /* *******************home********************* */
 
-#home{
-    background-image: linear-gradient(rgba(0, 0, 0,0.87)),url(../images/hero-bg-H6PoyNYD.jpg);
-    min-height: 100vh;
-   background-attachment: fixed;
-   background-size: cover; 
+#home {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.87)), url(../images/hero-bg-H6PoyNYD.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
 
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.hero h1{
-font-size: 4.0625rem;    
-}
-.hero p{
-    max-width: 570px;
-}
-.btn-2{
-    border: 2px solid var(--main-color);
-    transition: 0.3s all;
-}
-.hero img{
-
-border-radius: 15px;
-    height: 400px;
-    object-fit: cover;
-}
-.hero-img{
-    background-image: linear-gradient(to right,#CAFD1D,#0AE072  );
-    padding: 5px;
-    border-radius: 15px;
-}
-.img-badge{
-    position: absolute;
-    bottom: -16px;
-    left: -16px;
-    border-radius: 10px;
-    border: 1px solid #3c3c3c;
-    background-color:#0B0E13 ;
-    padding-inline: 30px;
-    padding-block: 20px;
-}
-.img-badge p{
-    font-size: .75rem;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#home p{
-    color: #99a1af;
+.hero h1 {
+  font-size: 4.0625rem;
 }
-@media screen and (max-width:782px){
-    #home button{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #home h1{
-        font-size: 2.5rem;
-    }
-    #home{
-        padding-top: 150px;
-        text-align: center;
-    padding-bottom: 100px;
-    background-attachment: scroll;
-    }
-    .hero-img{
-        margin-top: 50px;
-    }
-    .hero-img img{
-        height: 230px;
-    }
-    .img-badge{
-        padding: 10px;
-    }
+.hero p {
+  max-width: 570px;
+}
+.btn-2 {
+  border: 2px solid var(--main-color);
+  transition: 0.3s all;
+}
+.hero img {
+  border-radius: 15px;
+  height: 400px;
+  object-fit: cover;
+}
+.hero-img {
+  background-image: linear-gradient(to right, #cafd1d, #0ae072);
+  padding: 5px;
+  border-radius: 15px;
+}
+.img-badge {
+  position: absolute;
+  bottom: -16px;
+  left: -16px;
+  border-radius: 10px;
+  border: 1px solid #3c3c3c;
+  background-color: #0b0e13;
+  padding-inline: 30px;
+  padding-block: 20px;
+}
+.img-badge p {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+#home p {
+  color: #99a1af;
 }
 
 
 /* ****************************************our games*********************************** */
-#our-games{
-    padding-top: 100px;
-    padding-bottom: 100px;
+#our-games {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.heading p{
-color: var(--main-color);
-font-size: 1.125rem;
-position: relative;
-display: inline-block;
+.heading p {
+  color: var(--main-color);
+  font-size: 1.125rem;
+  position: relative;
+  display: inline-block;
 }
-.heading > p::after{
-    content: "";
-position: absolute;
-right: -90px;
-top: 50%;
-background-image: linear-gradient(to right, var(--main-color)80% ,transparent);
-height: 3px;
-width: 70px;
+.heading > p::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color) 80%,
+    transparent
+  );
+  height: 3px;
+  width: 70px;
 }
-.heading > p::before{
-    content: "";
-position: absolute;
-left: -90px;
-top: 50%;
-background-image: linear-gradient(to left, var(--main-color)80% ,transparent);
-height: 3px;
-width: 70px;
+.heading > p::before {
+  content: "";
+  position: absolute;
+  left: -90px;
+  top: 50%;
+  background-image: linear-gradient(
+    to left,
+    var(--main-color) 80%,
+    transparent
+  );
+  height: 3px;
+  width: 70px;
 }
-.heading div p{
-    font-size: 3.125rem;
+.heading div:not(.paragraph) p {
+  font-size: 3.125rem;
 }
-.heading h2{
-    font-size: 3rem;
-    color: white;
+.heading h2 {
+  font-size: 3rem;
+  color: white;
 }
-.carousel-item img{
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+.carousel-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 
-    transition: 0.5s all;
+  transition: 0.5s all;
 }
-.carousel-control-next,.carousel-control-prev{
-    position: static;
-    height: 60px;
-    width: 60px;
-    color: white;
-    border-radius: 50%;
-    border:2px solid white;
-    
+.carousel-control-next,
+.carousel-control-prev {
+  position: static;
+  height: 60px;
+  width: 60px;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
 }
-.carousel-control-next:hover ,.carousel-control-prev:hover{
-border-color:var(--main-color) ;
-color: var(--main-color);
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  border-color: var(--main-color);
+  color: var(--main-color);
 }
-.carousel-item{
-    overflow: hidden;
+.carousel-item {
+  overflow: hidden;
 }
-.card-img{
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.card-img:hover img{
-    transform: scale(1.2);
-}
-.card-img:hover{
-    border: 2px solid var(--main-color);
-
-}
-.overlay{
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(to bottom,transparent,var(--main-color));
-padding-bottom: 15px;
-padding-left: 20px;
-align-items: flex-end;
-display: flex;
-transition: 0.4s all;
-
-}
-.card-img:hover .overlay{
-    bottom: 0;
-}
-.spans{
-    top: -100%;
-    left: 0;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: white;
-    transition: 0.4s all;
-}
-.card-img:hover .spans{
-    top: 0;
-}
-.spans span{
-    font-size: .75rem;
-    margin-right: 5px;
-padding: 5px 10px;
-    background-color: rgba(0, 0, 0,0.6);
-border-radius: 25px;
+.card-img {
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-@media screen and (max-width:782px){
-.heading p{
-    font-size: 1rem ;
+.card-img:hover img {
+  transform: scale(1.2);
 }
-.heading h2{
-    font-size: 2rem;
+.card-img:hover {
+  border: 2px solid var(--main-color);
 }
-.btns{
-    flex-direction: column;
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to bottom, transparent, var(--main-color));
+  padding-bottom: 15px;
+  padding-left: 20px;
+  align-items: flex-end;
+  display: flex;
+  transition: 0.4s all;
 }
-.btns button{
-    
+.card-img:hover .overlay {
+  bottom: 0;
 }
-#our-games .btn-2{
-width: 94%;
+.spans {
+  top: -100%;
+  left: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  color: white;
+  transition: 0.4s all;
 }
-.carousel-control-next,.carousel-control-prev{
-    position: static;
-    height: 40px;
-    width: 40px;
-    color: white;
-    border-radius: 50%;
-    border:2px solid white;
-    
+.card-img:hover .spans {
+  top: 0;
 }
-
+.spans span {
+  font-size: 0.75rem;
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
 }
 
 
 /* ********************************what we do**************************************** */
 
+.what-card i {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: inline-flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2939;
+}
+.what-card h3 {
+  font-size: 1.25rem;
 
-.what-card i{
-width: 60px;
-height: 60px;
-border-radius: 10px;
-display: inline-flex;
-margin-bottom: 15px;
-justify-content: center;
-align-items: center;
-background-color:#1E2939 ;
 }
-.what-card h3{
-    font-size: 1.25rem;
-    width: 50%;
+.what-card img {
+  height: 100%;
 }
-.what-card img{
+.what-card {
+  border: 1px solid #1e2939;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  height: 100%;
+  transition: 0.5s all;
+  position: relative;
+}
+.what-card:not(.not-me)::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid var(--main-color);
+  border-right: 12px solid transparent;
+  border-left: 12px solid var(--main-color);
+  left: -20px;
+  top: -20px;
+  position: absolute;
+  transition: 0.5s all;
+}
+.what-card:not(.not-me)::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid var(--main-color);
+  border-top: 12px solid transparent;
+  border-right: 12px solid var(--main-color);
+  border-left: 12px solid transparent;
+  right: -20px;
+  bottom: -20px;
+  position: absolute;
+  transition: 0.5s all;
+}
+.what-card:hover::before {
+  top: 20px;
+  left: 20px;
+}
+.what-card:hover::after {
+  right: 20px;
+  bottom: 20px;
+}
+.what-card:not(.not-me):hover {
+  border-color: var(--main-color);
+}
+.what-card:hover i {
+  color: black !important;
+  background-color: var(--main-color);
+}
+.line {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--main-color) 20% 80%,
+    transparent
+  );
+  box-shadow:
+    0 0 10px var(--main-color),
+    0 0 20px #cbfe1c4d;
+}
+
+
+
+
+/* **********************************sponsors***************************** */
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-inline:10px;
+}
+.logo img{
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
-.what-card{
-    border: 1px solid #1E2939;
-overflow: hidden;
- border-radius: 20px;
-    padding:80px 0px ;
-    background-color: #1A1A1A;
+#sponsors,.moving-row{
+    overflow: hidden;
+}
+.moving-content{
+    margin-bottom:20px ;
+    animation: scroll-left 20s linear infinite;
+}
+.moving-content.right{
+    animation: scroll-right 20s linear infinite;
+}
+@keyframes scroll-left {
+    0%{
+        transform: translateX(0);  
+    }
+    100%{
+        transform: translateX(-40%);
+    }
+}
+@keyframes scroll-right {
+    0%{
+        transform: translateX(-40%);  
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.bg-sponsors{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(var(--main-color) ,transparent 70%);
+    height: 100%;
+    width: 1200px;
+}
+
+
+
+/* **************************our team************************** */
+
+.team-card img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.team-card{
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.card-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     transition: 0.5s all;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: grayscale(100%);
 }
-.what-card:not(.not-me)::before{
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom:12px solid transparent ;
-    border-top: 12px solid var(--main-color);
-    border-right: 12px solid transparent;
-    border-left: 12px solid var(--main-color);
-    left: -20px;
-    top: -20px;
-    position: absolute;
-    transition: 0.5s all;
+.team-card:hover .card-layer{
+    top: -100%;
 }
-.what-card:not(.not-me)::after{
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom:12px solid var(--main-color) ;
-    border-top: 12px solid transparent;
-    border-right: 12px solid var(--main-color);
-    border-left: 12px solid transparent;
-    right: -20px;
-    bottom: -20px;
-    position: absolute;
-    transition: 0.5s all;
+.team-card:hover .card-rotate{
+    color: var(--main-color);
 }
-.what-card:hover::before{
-    top: 20px;
-    left: 20px;
+.team-card:hover .hover-para{
+    color: var(--main-color) !important;
 }
-.what-card:hover::after{
-    right: 20px;
+.card-text{
+    bottom: 10px;
+    left: 30px;
+    z-index: 1000;
+}
+.card-champ{
+    font-size: .75rem;
+    color: #99a1af !important;
+    
+}
+.card-rotate{
+    color: white;
+    right: 40px;
+    margin-top: 0;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
     bottom: 20px;
 }
-.what-card:not(.not-me):hover{
-    border-color: var(--main-color);
+
+
+
+/* ***************************contact us******************************* */
+
+.contact-card, .join-card{
+    background-color: #1E2939;
+    padding:35px 30px;
+    border-radius:15px;
 }
-.what-card:hover i{
-    color: black !important;
+.join-card{
+    background-image: linear-gradient(to right, #CAFE1E,#0EE072);
+    padding: 40px 30px;
+}
+.contact-card i, .join-card i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 35px;
     background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.join-card i{
+    padding: 10px;
+    margin-right: 20px;
+    background-color: black;
+    display: inline-flex;
+    color: var(--main-color);
+}
+.join-card i:hover{
+    
+    box-shadow: inset 0 0 0 9999px rgba(199, 239, 97, 0.2);
+    
+    cursor: pointer;
+}
+.contact-card h3{
+    color: white;
+}
+.contact-card p{
+    color:#99a1af ;
+}
+.form-body{
+    padding: 30px;
+    background-color:#1E2939 ;
+    border-radius: 15px;
+    color: #d1d5dc;
 }
 
-@media screen and (max-width:782px){
-.what-card h3{
-    font-size: 1rem;
-    width: 100%;
+.form-control {
+    
+    background-color: #364153 ;
+    color: white !important;
+    
+    padding: 12px 0.75rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#4A5565;
+    border-image: none;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.what-card{
-    border: 1px solid #1E2939;
-overflow: hidden;
- border-radius: 20px;
-    padding:60px 0px ;
-    background-color: #1A1A1A;
+.form-control:focus{
+    background-color: #4A5565;
+    border: 2px solid var(--main-color);
+    box-shadow: none;
+}
+#contact-us{
+    background-color: #101624;
+    
+    padding-bottom: 100px;
+}
+textarea{
+    height: 150px;
+    resize: none;
+}
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 0 !important;   
+}
+.form-check-input:focus{
+    border-color: var(--main-color);
+    border-width: 2px;
+    box-shadow: none;
+}
+form button{
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 0;
+}
+form{
+    border-bottom: 1px solid #364153;
+    padding-bottom: 30px;
+}
+
+
+/* ***********************footer************************* */
+
+footer{
+    background-color: black;
+    padding-top: 70px;
+}
+footer i:hover, footer a:hover{
+    color: var(--main-color) !important;
+    cursor: pointer;
+}
+.footer-section p{
+    max-width:85% ;
+}
+.footer-head{
+    border-bottom: 1px solid #1E2939;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+@media screen and (max-width: 782px) {
+    .navbar .sign-btn {
+        width: 100%;
+    }
+    .navbar a {
+        margin-bottom: 20px;
+    }
+    .navbar-nav {
+        border-bottom: 0.5px solid #424242;
+        padding-bottom: 0 !important;
+    }
+    .nav-icons {
+        padding-block: 10px;
+    }
+    #home button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home {
+        padding-top: 150px;
+        text-align: center;
+        padding-bottom: 100px;
+        background-attachment: scroll;
+    }
+    .hero-img {
+        margin-top: 50px;
+    }
+    .hero-img img {
+        height: 230px;
+    }
+    .img-badge {
+        padding: 10px;
+    }
+    .heading p {
+        font-size: 1rem;
+    }
+    .heading h2 {
+        font-size: 2rem;
+    }
+    .btns {
+        flex-direction: column;
+    }
+   
+    #our-games .btn-2 {
+        width: 94%;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: static;
+        height: 40px;
+        width: 40px;
+        color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+   }
+     .what-card h3 {
+    font-size: 1rem;
+    
+  }
+  #what-we-do .heading p,#what-we-do .heading h2{
+    font-size: 20px;
+  }
+  .what-card {
+    border: 1px solid #1e2939;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 60px 0px;
+    background-color: #1a1a1a;
     height: 100%;
+    min-height: 0;
     transition: 0.5s all;
     position: relative;
+  }
+ #our-team .heading h2, #our-team .heading p:not(.not-me){
+        width: 80%;
+        margin: auto;
+    }
+    .team-card img{
+        height: 300px;
+        object-position: 0% 50% !important;
+    }
+    .footer-section p{
+        max-width: 100%;
+}
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+.what-card{
+    height:300px ;
+    min-height: 300px;
 }
 }
+
+
