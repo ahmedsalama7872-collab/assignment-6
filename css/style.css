@@ -435,17 +435,17 @@ h6 {
     z-index: 1000;
 }
 .card-champ{
-    font-size: .75rem;
-    color: #99a1af !important;
-    
+  font-size: .75rem;
+  color: #99a1af !important;
+  
 }
 .card-rotate{
-    color: white;
-    right: 40px;
-    margin-top: 0;
-    transform: rotate(90deg);
-    transform-origin: bottom right;
-    bottom: 20px;
+  color: white;
+  right: 40px;
+  margin-top: 0;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  bottom: 20px;
 }
 
 
@@ -453,133 +453,141 @@ h6 {
 /* ***************************contact us******************************* */
 
 .contact-card, .join-card{
-    background-color: #1E2939;
-    padding:35px 30px;
-    border-radius:15px;
+  background-color: #1E2939;
+  padding:35px 30px;
+  border-radius:15px;
 }
 .join-card{
-    background-image: linear-gradient(to right, #CAFE1E,#0EE072);
-    padding: 40px 30px;
+  background-image: linear-gradient(to right, #CAFE1E,#0EE072);
+  padding: 40px 30px;
 }
 .contact-card i, .join-card i{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 35px;
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 35px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 .join-card i{
-    padding: 10px;
-    margin-right: 20px;
-    background-color: black;
-    display: inline-flex;
-    color: var(--main-color);
+  padding: 10px;
+  margin-right: 20px;
+  background-color: black;
+  display: inline-flex;
+  color: var(--main-color);
 }
 .join-card i:hover{
-    
-    box-shadow: inset 0 0 0 9999px rgba(199, 239, 97, 0.2);
-    
-    cursor: pointer;
+  
+  box-shadow: inset 0 0 0 9999px rgba(199, 239, 97, 0.2);
+  
+  cursor: pointer;
 }
 .contact-card h3{
-    color: white;
+  color: white;
 }
 .contact-card p{
-    color:#99a1af ;
+  color:#99a1af ;
 }
 .form-body{
-    padding: 30px;
-    background-color:#1E2939 ;
-    border-radius: 15px;
-    color: #d1d5dc;
+  padding: 30px;
+  background-color:#1E2939 ;
+  border-radius: 15px;
+  color: #d1d5dc;
 }
-
 .form-control {
-    
-    background-color: #364153 ;
-    color: white !important;
-    
-    padding: 12px 0.75rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color:#4A5565;
-    border-image: none;
-    border-radius: 10px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+  background-color: #364153 ;
+  color: white !important;
+  
+  padding: 12px 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color:#4A5565;
+  border-image: none;
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control:focus{
-    background-color: #4A5565;
-    border: 2px solid var(--main-color);
-    box-shadow: none;
+  background-color: #4A5565;
+  border: 2px solid var(--main-color);
+  box-shadow: none;
 }
 #contact-us{
-    background-color: #101624;
-    
-    padding-bottom: 100px;
+  background-color: #101624;
+  
+  padding-bottom: 100px;
 }
 textarea{
-    height: 150px;
-    resize: none;
+  height: 150px;
+  resize: none;
 }
 .form-check-input {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border-radius: 0 !important;   
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 0 !important;   
 }
 .form-check-input:focus{
-    border-color: var(--main-color);
-    border-width: 2px;
-    box-shadow: none;
+  border-color: var(--main-color);
+  border-width: 2px;
+  box-shadow: none;
 }
 form button{
-    width: 100%;
-    background-color: var(--main-color);
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 15px;
-    border: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 0;
 }
 form{
-    border-bottom: 1px solid #364153;
-    padding-bottom: 30px;
+  border-bottom: 1px solid #364153;
+  padding-bottom: 30px;
 }
-
+.form-control::placeholder{
+  color: #8E959F;
+}
 
 /* ***********************footer************************* */
 
 footer{
-    background-color: black;
-    padding-top: 70px;
+  background-color: black;
+  padding-top: 70px;
 }
 footer i:hover, footer a:hover{
-    color: var(--main-color) !important;
-    cursor: pointer;
+  color: var(--main-color) !important;
+  cursor: pointer;
 }
 .footer-section p{
-    max-width:85% ;
+  max-width:85% ;
 }
 .footer-head{
-    border-bottom: 1px solid #1E2939;
-    padding-bottom: 50px;
+  border-bottom: 1px solid #1E2939;
+  padding-bottom: 50px;
 }
 
 
 
 
+@media screen and (max-width: 991px) {
+.what-card{
+    height:300px ;
+    min-height: 300px;
+}
 
-@media screen and (max-width: 782px) {
-    .navbar .sign-btn {
-        width: 100%;
-    }
-    .navbar a {
-        margin-bottom: 20px;
-    }
+}
+
+@media screen and (max-width: 684px) {
+  .navbar .sign-btn {
+    width: 100%;
+  }
+  .navbar a {
+    margin-bottom: 20px;
+  }
     .navbar-nav {
         border-bottom: 0.5px solid #424242;
         padding-bottom: 0 !important;
@@ -665,11 +673,5 @@ footer i:hover, footer a:hover{
 
 
 
-@media screen and (max-width: 991px) {
-.what-card{
-    height:300px ;
-    min-height: 300px;
-}
-}
 
 
