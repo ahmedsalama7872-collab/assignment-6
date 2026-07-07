@@ -11,7 +11,10 @@
 body {
   background-color: var(--second-color);
   font-family: "Chakra Petch", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+html{
+  overflow-x: hidden !important;
 }
 body::selection{
     background-color: var(--main-color);
