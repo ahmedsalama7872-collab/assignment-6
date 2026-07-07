@@ -379,12 +379,12 @@ h6 {
         transform: translateX(0);  
     }
     100%{
-        transform: translateX(-40%);
+        transform: translateX(-70%);
     }
 }
 @keyframes scroll-right {
     0%{
-        transform: translateX(-40%);  
+        transform: translateX(-70%);  
     }
     100%{
         transform: translateX(0);
@@ -651,6 +651,15 @@ section {
     font-size: 1rem;
     
   }
+
+  .moving-content{
+    margin-bottom:20px ;
+    animation: scroll-left 12s linear infinite;
+}
+.moving-content.right{
+    animation: scroll-right 12s linear infinite;
+}
+  
   #what-we-do .heading p,#what-we-do .heading h2{
     font-size: 20px;
   }
