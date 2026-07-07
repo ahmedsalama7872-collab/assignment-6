@@ -393,8 +393,9 @@ h6 {
     transform: translate(-50%,-50%);
     background: radial-gradient(var(--main-color) ,transparent 70%);
     height: 100%;
-    width: 1200px;
-}
+    max-width: 1200px;
+width: 100%;
+  }
 
 
 
